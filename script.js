@@ -14,6 +14,24 @@ function displayCurrentItem() {
   let currentImage = images[currentIndex];
   let container = document.getElementById("container");
   container.innerHTML = `<img src = ${currentImage} alt = game/>`;
+
+  let likeCount = 0;
+  let dislikeCount = 0;
+
+  const likeBtn = document.getElementById("like-btn");
+  const dislikeBtn = document.getElementById("dislike-btn");
+  const likeCountSpan = document.getElementById("like-count");
+  const dislikeCountSpan = document.getElementById("dislike-count");
+
+  likeBtn.addEventListener("click", () => {
+    likeCount++;
+    likeCountSpan.innerText = likeCount;
+  });
+
+  dislikeBtn.addEventListener("click", () => {
+    dislikeCount++;
+    dislikeCountSpan.innerText = dislikeCount;
+  });
 }
 
 displayCurrentItem();
@@ -21,12 +39,32 @@ displayCurrentItem();
 function displayNextItem() {
   if (currentIndex === images.length - 1) {
     currentIndex = 0;
+    likeCount = 0;
+    dislikeCount = 0;
   } else {
     currentIndex = currentIndex + 1;
   }
   let currentImage = images[currentIndex];
   let container = document.getElementById("container");
   container.innerHTML = `<img src = ${currentImage} alt = game/>`;
+
+  let likeCount = 0;
+  let dislikeCount = 0;
+
+  const likeBtn = document.getElementById("like-btn");
+  const dislikeBtn = document.getElementById("dislike-btn");
+  const likeCountSpan = document.getElementById("like-count");
+  const dislikeCountSpan = document.getElementById("dislike-count");
+
+  likeBtn.addEventListener("click", () => {
+    likeCount++;
+    likeCountSpan.innerText = likeCount;
+  });
+
+  dislikeBtn.addEventListener("click", () => {
+    dislikeCount++;
+    dislikeCountSpan.innerText = dislikeCount;
+  });
 }
 
 function displayPrevItem() {
@@ -38,6 +76,24 @@ function displayPrevItem() {
   let currentImage = images[currentIndex];
   let container = document.getElementById("container");
   container.innerHTML = `<img src = ${currentImage} alt = game/>`;
+
+  let likeCount = 0;
+  let dislikeCount = 0;
+
+  const likeBtn = document.getElementById("like-btn");
+  const dislikeBtn = document.getElementById("dislike-btn");
+  const likeCountSpan = document.getElementById("like-count");
+  const dislikeCountSpan = document.getElementById("dislike-count");
+
+  likeBtn.addEventListener("click", () => {
+    likeCount++;
+    likeCountSpan.innerText = likeCount;
+  });
+
+  dislikeBtn.addEventListener("click", () => {
+    dislikeCount++;
+    dislikeCountSpan.innerText = dislikeCount;
+  });
 }
 
 document.getElementById("next").addEventListener("click", displayNextItem);
