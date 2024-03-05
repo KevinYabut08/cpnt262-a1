@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <title>GAMING.GRIT</title>
   </head>
-  <body class="bg-black">
+  <body class="font-serif bg-white">
     <nav>
       <div class="flex items-center justify-space absolute p-[15px] w-[150px]">
         <a href="#">
           <img src="/assets/logo.png" alt="logo" />
         </a>
       </div>
-      <div class="text-pink-500">
-        <ul class="p-[20px] flex justify-end gap-[5rem]">
+      <div>
+        <ul
+          class="bg-black p-[30px] flex justify-end gap-[5rem] font-semibold text-white"
+        >
           <li><a href="#">Home</a></li>
           <li><a href="#">Games</a></li>
           <li><a href="#">Popular</a></li>
@@ -24,30 +27,35 @@
         </ul>
       </div>
     </nav>
-    <header class="mt-[90px] flex justify-center" id="container"></header>
-    <main class="text-center mt-[10px]">
+    <header class="text-black text-center">
+      <h1 class="text-[50px] font-bold">FEATURING</h1>
+      <h2 class="text-[30px] font-semibold">GAMES OF THE YEAR</h2>
+    </header>
+    <div class="mt-[20px] flex justify-center" id="container"></div>
+    <div class="text-center mt-[10px]">
       <button class="] w-[50px]" id="prev">
         <img src="/assets/button-2.png" \ />
       </button>
       <button class="w-[50px] ml-[50px]" id="next">
         <img src="/assets/button-1.png" \ />
       </button>
-    </main>
-    <footer class="bg-gray-800 mt-[100px] h-[16vh] opacity-70">
+    </div>
+    <main id="myMain" class="grid grid-cols-3 gap-[20px]"></main>
+    <footer class="bg-black mt-[100px] h-[16vh]">
       <div>
-        <ul class="text-center columns-5 text-[15px] p-[30px]">
-          <li><a href="#" class="text-pink-500">Home</a></li>
+        <ul class="text-center columns-5 text-[15px] p-[30px] text-white">
+          <li><a href="#">Home</a></li>
           <li>
-            <a href="#" class="text-pink-500">Games</a>
+            <a href="#">Games</a>
           </li>
           <li>
-            <a href="#" class="text-pink-500">Popular</a>
+            <a href="#">Popular</a>
           </li>
           <li>
-            <a href="#" class="text-pink-500">Contacts</a>
+            <a href="#">Contacts</a>
           </li>
           <li>
-            <a href="#" class="text-pink-500">About us</a>
+            <a href="#">About us</a>
           </li>
         </ul>
       </div>
