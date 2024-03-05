@@ -8,16 +8,18 @@
 
     <title>GAMING.GRIT</title>
   </head>
-  <body class="font-serif bg-white">
+  <body class="font-serif bg-neutral-300">
     <nav>
-      <div class="flex items-center justify-space absolute p-[15px] w-[150px]">
+      <div
+        class="flex items-center justify-space absolute p-[15px] lg:w-[150px] w-[120px]"
+      >
         <a href="#">
           <img src="/assets/logo.png" alt="logo" />
         </a>
       </div>
       <div>
         <ul
-          class="bg-black p-[30px] flex justify-end gap-[5rem] font-semibold text-white"
+          class="bg-black p-[30px] flex justify-end lg:text-[15px] text-[10px] gap-[1rem] lg:gap-[5rem] font-semibold text-white lg:flex"
         >
           <li><a href="#">Home</a></li>
           <li><a href="#">Games</a></li>
@@ -28,22 +30,37 @@
       </div>
     </nav>
     <header class="text-black text-center">
-      <h1 class="text-[50px] font-bold">FEATURING</h1>
-      <h2 class="text-[30px] font-semibold">GAMES OF THE YEAR</h2>
+      <h1 class="text-[30px] lg:text-[50px] font-bold">FEATURING</h1>
+      <h2 class="text-[20px] lg:text-[30px] font-semibold">
+        GAMES OF THE YEAR
+      </h2>
     </header>
     <div class="mt-[20px] flex justify-center" id="container"></div>
-    <div class="text-center mt-[10px]">
-      <button class="] w-[50px]" id="prev">
+    <div class="text-center mt-[10px] p-[20px]">
+      <button
+        class="] w-[50px] bg-neutral-400 rounded-[10px] p-[5px] hover:bg-neutral-200"
+        id="prev"
+      >
         <img src="/assets/button-2.png" \ />
       </button>
-      <button class="w-[50px] ml-[50px]" id="next">
+      <button
+        class="w-[50px] ml-[50px] bg-neutral-400 rounded-[10px] p-[5px] hover:bg-neutral-200"
+        id="next"
+      >
         <img src="/assets/button-1.png" \ />
       </button>
     </div>
-    <main id="myMain" class="grid grid-cols-3 gap-[20px]"></main>
+    <div>
+      <main
+        id="myMain"
+        class="grid w-[400px]lg:w-0 lg:m-0 lg:grid-cols-3 gap-[20px]"
+      ></main>
+    </div>
     <footer class="bg-black mt-[100px] h-[16vh]">
       <div>
-        <ul class="text-center columns-5 text-[15px] p-[30px] text-white">
+        <ul
+          class="text-center columns-5 text-[10px] lg:text-[15px] p-[30px] text-white"
+        >
           <li><a href="#">Home</a></li>
           <li>
             <a href="#">Games</a>
