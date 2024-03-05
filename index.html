@@ -11,7 +11,7 @@
   <body class="font-serif bg-neutral-300">
     <nav>
       <div
-        class="flex items-center justify-space absolute p-[15px] lg:w-[150px] w-[120px]"
+        class="flex items-center justify-space absolute p-[15px] lg:w-[150px] w-[100px]"
       >
         <a href="#">
           <img src="/assets/logo.png" alt="logo" />
@@ -26,6 +26,15 @@
           <li><a href="#" class="hover:text-pink-700">Popular</a></li>
           <li><a href="#" class="hover:text-pink-700">Contacts</a></li>
           <li><a href="#" class="hover:text-pink-700">About us</a></li>
+          <form action="/https://store.steampowered.com/" class="text-black">
+            <input
+              class="w-[40px] lg:w-[200px]"
+              type="text"
+              placeholder="Search"
+              name="search"
+            />
+            <button type="submit"></button>
+          </form>
         </ul>
       </div>
     </nav>
@@ -98,6 +107,20 @@
         id="myMain"
         class="grid w-[400px]lg:w-0 lg:m-0 lg:grid-cols-3 gap-[20px]"
       ></main>
+    </div>
+    <div>
+      <h1 class="text-center p-[10px] font-bold">EMAIL US...</h1>
+      <form class="text-center p-[20px]">
+        <input type="text" placeholder="Email" /><br /><br />
+        <textarea type="text" placeholder="Questions"></textarea>
+        <br /><br />
+        <button
+          class="bg-black text-white hover:text-pink-700 rounded-[5px] p-[10px]"
+          type="submit"
+        >
+          submit
+        </button>
+      </form>
     </div>
     <footer class="bg-black mt-[100px] h-[16vh]">
       <div>
