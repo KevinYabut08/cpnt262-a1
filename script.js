@@ -1,12 +1,12 @@
 "use strict";
 
 const images = [
-  "/assets/img-1.jpg",
-  "/assets/img-2.jpg",
-  "/assets/img-3.jpg",
-  "/assets/img-4.jpg",
-  "/assets/img-5.jpg",
-  "/assets/img-6.jpg",
+  "./assets/img-1.jpg",
+  "./assets/img-2.jpg",
+  "./assets/img-3.jpg",
+  "./assets/img-4.jpg",
+  "./assets/img-5.jpg",
+  "./assets/img-6.jpg",
 ];
 let currentIndex = 0;
 
@@ -100,15 +100,15 @@ document.getElementById("next").addEventListener("click", displayNextItem);
 document.getElementById("prev").addEventListener("click", displayPrevItem);
 
 const cardImg = [
-  "/assets/cardImg-1.jpg",
-  "/assets/cardImg-2.jpg",
-  "/assets/cardImg-3.jpg",
-  "/assets/cardImg-4.webp",
-  "/assets/cardImg-5.jpg",
-  "/assets/cardImg-6.jpg",
-  "/assets/cardImg-7.webp",
-  "/assets/cardImg-8.webp",
-  "/assets/cardImg-9.jpg",
+  "./assets/cardImg-1.jpg",
+  "./assets/cardImg-2.jpg",
+  "./assets/cardImg-3.jpg",
+  "./assets/cardImg-4.webp",
+  "./assets/cardImg-5.jpg",
+  "./assets/cardImg-6.jpg",
+  "./assets/cardImg-7.webp",
+  "./assets/cardImg-8.webp",
+  "./assets/cardImg-9.jpg",
 ];
 
 function createGallery() {
