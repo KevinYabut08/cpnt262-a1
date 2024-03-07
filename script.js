@@ -10,6 +10,7 @@ const images = [
 ];
 let currentIndex = 0;
 
+//showing or displaying the image
 function displayCurrentItem() {
   let currentImage = images[currentIndex];
   let container = document.getElementById("container");
@@ -23,6 +24,7 @@ function displayCurrentItem() {
   const likeCountSpan = document.getElementById("like-count");
   const dislikeCountSpan = document.getElementById("dislike-count");
 
+  // counts the like and dislike when you click them
   likeBtn.addEventListener("click", () => {
     likeCount++;
     likeCountSpan.innerText = likeCount;
@@ -36,7 +38,9 @@ function displayCurrentItem() {
 
 displayCurrentItem();
 
+// go to the next image when you click the right button
 function displayNextItem() {
+  // adds 1 to the current image length to show the next image
   if (currentIndex === images.length - 1) {
     currentIndex = 0;
     likeCount = 0;
@@ -67,7 +71,9 @@ function displayNextItem() {
   });
 }
 
+//go to the previous image when you click on the left button
 function displayPrevItem() {
+  // subtract 1 to the current image length to show the previous image
   if (currentIndex === 0) {
     currentIndex = 5;
   } else {
@@ -111,6 +117,7 @@ const cardImg = [
   "./assets/cardImg-9.jpg",
 ];
 
+// displays the pictures in my html
 function createGallery() {
   const galleryContainer = document.getElementById("myMain");
 
